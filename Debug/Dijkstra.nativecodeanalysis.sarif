@@ -1,0 +1,183 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "Function uses '60036' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://///storage/homes/S-1-5-21-1167378736-2199707310-2242153877-1057824/Downloads/Project/FinalProjectWithLinkedList/Dijkstra.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 16,
+                  "endLine": 85,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?heapBased@Dijkstra@@QAEXHHQAPAUnode@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30147.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00E5D1C0 -il C:\\Users\\LOCAL_~1.JAI\\Temp\\_CL_ed158027ast -typedil -f Dijkstra.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930147 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\Dijkstra.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory \\\\storage\\homes\\S-1-5-21-1167378736-2199707310-2242153877-1057824\\Downloads\\Project\\FinalProjectWithLinkedList -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/maxheap.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "d2a902d9043507dd046822b1cb346655"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/maxheap.h"
+          },
+          "hashes": {
+            "md5": "8028834d4adfb4b95659ed9543233734"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/graph.h"
+          },
+          "hashes": {
+            "md5": "88b39fe73ca3c503ad50a76ffe059995"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/S-1-5-21-1167378736-2199707310-2242153877-1057824/Downloads/Project/FinalProjectWithLinkedList/main.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "ca0a921d1acfe8d44071d7f4ca2b5dea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/kruskal.h"
+          },
+          "hashes": {
+            "md5": "797f50ad70a87d2421a689950ad861c2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/kruskalheap.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "fb9d021b04912b78c9eb11039593e7fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/dijkstra.h"
+          },
+          "hashes": {
+            "md5": "c68f2a6d3b117558038b3f4f3a623568"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/dijkstraheap.h"
+          },
+          "hashes": {
+            "md5": "cacb0204aeee87c3f373830c3a5bf2e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/kruskalheap.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "ba78847d1a5b4eb6623c43799924b98c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/kruskal.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "55865738a9634cc8a66e21ee1ae8b5fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/graph.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "090376168d8ba7ebbfa92aa84e7aafc6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/s-1-5-21-1167378736-2199707310-2242153877-1057824/downloads/project/finalprojectwithlinkedlist/dijkstraheap.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "6845de891a1c1a10edb479b8d9d5255a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file://///storage/homes/S-1-5-21-1167378736-2199707310-2242153877-1057824/Downloads/Project/FinalProjectWithLinkedList/Dijkstra.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "0296e7a160da146fb45825b02eed0dfd"
+          }
+        }
+      ]
+    }
+  ]
+}
